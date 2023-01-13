@@ -1,15 +1,10 @@
 .footer {
     display: flex;
-    background-color: #212529;
-    color: white;
-    height: 200px;
     flex-direction: column;
-    margin-top: 30px;
-    /*position: fixed;*/
-    /*position: relative;*/
-    /*bottom: 0;*/
-    /*left: 0;*/
-    /*width: 100%;*/
+    background-color: #212529;
+    height: 200px;
+    max-width: 100%;
+    padding-top: 16px;
 }
 
 .footer a {
@@ -31,7 +26,7 @@
 
 .contentTopRight {
     width: 70%;
-    padding-top: 15px;
+    padding-top: 10px;
     display: flex;
     justify-content: center;
 }
@@ -46,21 +41,27 @@
 
 .contentDown {
     display: flex;
-    width: 100%;
-    flex-direction: row;
-    padding: 50px 0 0 50px;
-    /*background-color: gray;*/
+    margin-top: 50px;
+    align-items: center;
+    padding-left: 50px;
+    color: whitesmoke;
 }
 
 .contentDown img {
     max-height: 30px;
     max-width: 30px;
     margin-right: 10px;
+    transition: all 1s;
+
+}
+
+.contentDown img:hover {
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
 }
 
 .contentTop {
     display: flex;
     flex-direction: row;
     padding-top: 10px;
-
 }

@@ -1,0 +1,22 @@
+.ContentButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 12px;
+    min-width: 270px;
+    width: 100%;
+    border-radius: 30px;
+    text-align: center;
+    max-width: 100%;
+}
+
+.ContentButton button {
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    line-height: 20px;
+    margin-left: 8px;
+
+}

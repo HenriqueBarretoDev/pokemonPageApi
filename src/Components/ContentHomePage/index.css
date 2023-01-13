@@ -12,29 +12,26 @@
     color: white;
     /*background-color: fuchsia;*/
     /*padding: 0 0 2000px 0;*/
-    margin-bottom: 50px;
+    /*margin-bottom: 50px;*/
     /*background-color: #FFC107;*/
+    font-family: "Comic Sans MS";
 
 }
 
+.contentHomePage main {
+    padding-left: 30px;
+}
+
 .content {
-    /*max-width: 50%;*/
-    /*padding: 70px 0 0 40px;*/
     background-color: red;
     height: 720px;
-    /*display: flex;*/
     flex-direction: column;
     width: 100%;
-    /*align-self: flex-start;*/
-    /*align-items: baseline;*/
-    /*justify-items: left;*/
-    /*justify-content: left;*/
-    /*justify-self: left;*/
 }
 
 .content a {
     text-decoration: none;
-    font-family: "Roboto Light";
+    /*font-family: "Roboto Light";*/
     padding: 10px;
     font-size: 18px;
     font-weight: lighter;
@@ -43,23 +40,26 @@
 }
 
 .title {
-    font-family: 'Lagosta', cursiva;
-    font-size: 95px;
+    /*font-family: 'Lagosta', cursiva;*/
+    font-size: 70px;
     font-weight: 700;
-    padding: 100px 0 20px 20px;
+    /*padding: 100px 0 20px 20px;*/
+    /*border: 1px solid black;*/
 }
 
 .text {
-    font-family: "Roboto Light";
-    padding: 0 20px 20px 20px;
+    /*font-family: "Roboto Light";*/
+    /*padding: 0 20px 20px 20px;*/
     font-size: 24px;
     font-weight: lighter;
     text-align: justify;
     width: 50%;
+    margin-bottom: 40px;
+    background-color: whitesmoke;
+    color: black;
 }
 
 .startJourney {
-    margin: 0 20px 20px 20px;
     background-color: #FFC107;
     border-radius: 10px;
     font-size: 18px;

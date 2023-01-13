@@ -1,22 +1,23 @@
 import React from 'react';
+import {useNavigate} from "react-router-dom"
 import './index.css'
-import Register from '../../Pages/Register'
 
 const ContentHomePage = () => {
+    const navigate = useNavigate();
 
+    function gotoPokemon() {
+        navigate("/pokemons")
+    }
 
     return (
         <div className="contentHomePage">
             <main>
                 <h1 className="title">Super Pokémon</h1>
                 <p className="text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida nisl a augue viverra
-                    varius. Quisque a mi leo. Praesent venenatis, nunc in consequat volutpat, lorem orci porttitor
-                    massa, a tempus leo tortor et neque. Donec elementum dolor in odio lacinia, at ultrices est
-                    facilisis.
+                    Comece sua nova aventura na região de Pallet, nesta aventura de mundo aberto para o Nintendo Switch.
+                    Pronto para ser o melhor treinador pokemon do mundo?
                 </p>
-                {/*<button className='startJourney' > Começar minha jornada</button>*/}
-                <a className='startJourney' href='#formRegister'> Começar minha jornada</a>
+                <button onClick={gotoPokemon}>Conhecer pokemons</button>
             </main>
         </div>
     )

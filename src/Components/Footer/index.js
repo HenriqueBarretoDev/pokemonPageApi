@@ -9,21 +9,22 @@ const Footer = () => {
 
             <div className="contentTop">
                 <div className="contentTopLeft">
-                    <a href="https://www.globo.bom">Pokemon Super</a>
+                    <a href='#header' >Pokemon Super</a>
                 </div>
 
                 <div className="contentTopRight">
-                    <a href="https://www.globo.com/todos-os-sites/">Todos os Sites</a>
+                    <a href="https://www.globo.com/todos-os-sites/">Pokémons</a>
 
-                    <a href="http://g1.globo.com/principios-editoriais-do-grupo-globo.html">Princípios editoriais</a>
+                    <a href="http://g1.globo.com/principios-editoriais-do-grupo-globo.html">Filmes</a>
 
                     <a href="https://privacida
                     de.globo.com/privacy-policy/">Política de privacidade</a>
 
-                    <a href="https://login.globo.com/login/7029/connect-confirm?url=https%3A%2F%2Fid.globo.com%2Fauth%2Frealms%2Fglobo.com%2Flogin-actions%2Fauthenticate%3Fsession_code%3D5NkwWatoKYg1Zz4tHm4FS_-3WL3WMdtrKuFgJx6qzwE%26execution%3Db5dd88dc-447e-468f-945e-e7c7de4883b7%26client_id%3Dminha-conta-producao-v2%2540apps.globoid%26tab_id%3DtSlsePLSaSk%26request-context%3DEUClGZ&error=&request-context=EUClGZ">Minha
-                        conta</a>
-
                     <a href="https://negocios8.redeglobo.com.br/Paginas/Midia-Kit.aspx">Anuncie conosco</a>
+
+                    <a href="https://login.globo.com/login/7029/connect-confirm?url=https%3A%2F%2Fid.globo.com%2Fauth%2Frealms%2Fglobo.com%2Flogin-actions%2Fauthenticate%3Fsession_code%3D5NkwWatoKYg1Zz4tHm4FS_-3WL3WMdtrKuFgJx6qzwE%26execution%3Db5dd88dc-447e-468f-945e-e7c7de4883b7%26client_id%3Dminha-conta-producao-v2%2540apps.globoid%26tab_id%3DtSlsePLSaSk%26request-context%3DEUClGZ&error=&request-context=EUClGZ">
+                        Minha conta</a>
+
                 </div>
             </div>
 

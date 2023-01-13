@@ -1,0 +1,115 @@
+.home {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+    background-color: #212529;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.cardHome {
+    padding: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.buttonsNextAndPrevious button {
+    padding: 5px 15px;
+    margin: 0 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.buttonsNextAndPrevious {
+    margin: 25px 0;
+}
+
+.button-73 {
+    appearance: none;
+    border-radius: 40em;
+    border-style: none;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -.24px;
+    margin: 0;
+    outline: none;
+    padding: 1rem 1.3rem;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-73:hover {
+    transform: scale(1.125);
+}
+
+.button-73:active {
+    transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+    .button-73 {
+        font-size: 1.5rem;
+        padding: .75rem 2rem;
+    }
+}
+
+.separatorWhite {
+    background-color: whitesmoke;
+    min-height: 40px;
+    min-width: 100%;
+}
+
+.separatorBlack {
+    background-color: #212529;
+    min-height: 40px;
+    min-width: 100%;
+}
+
+.cardsPokedex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.infoHomeCard h1 {
+    display: flex;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: sans-serif;
+    background: linear-gradient(270deg, red, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.infoHomeCard img {
+    height: 30px;
+    transition: all 1s;
+    position: relative;
+    left: 10px;
+}
+
+.infoHomeCard img:hover {
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+}

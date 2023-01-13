@@ -1,0 +1,12 @@
+.inp {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin-bottom: 50px;
+
+}

@@ -1,0 +1,66 @@
+.cardModel {
+    height: 150px;
+    width: 150px;
+}
+
+.contentInfo {
+    background-color: skyblue;
+    min-height: 20px;
+    max-height: 20px;
+    margin-bottom: 10px;
+}
+
+.imgPokemon {
+    max-height: 180px;
+    min-height: 180px;
+    display: flex;
+    justify-content: center;
+}
+
+.titlePokemons p::first-letter {
+    text-transform: uppercase;
+}
+
+.titlePokemons {
+    width: 100%;
+    min-height: 24px;
+    max-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titlePokemons p {
+    padding-right: 25px;
+    white-space: nowrap;
+}
+
+.titlePower {
+    display: flex;
+    justify-content: space-between;
+    min-height: 24px;
+    max-height: 24px;
+}
+
+.titlePower span {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #d17e37;
+    border-radius: 10px;
+    padding: 2px 10px;
+}
+
+.contentTitlePokemonsCard {
+    display: flex;
+    min-height: 24px;
+    max-height: 24px;
+}
+
+.titleId p {
+    font-size: 10px;
+    font-weight: bold;
+    align-self: center;
+    display: flex;
+    height: 100%;
+
+}

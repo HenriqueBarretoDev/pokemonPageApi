@@ -1,0 +1,70 @@
+.contentHomePage {
+    display: flex;
+    flex-direction: column;
+    /*background-image: url('../../Assets/Images/Ash_Ketchum_World_Champion_Screenshot_2.jpg');*/
+    background-image: url('../../Assets/Images/a1f394fc4adc3fe12cf37e3542f764251651845249_main.png');
+    /*height: 100%;*/
+    width: 100%;
+    min-height: 720px;
+    background-repeat: no-repeat, repeat-x;
+    background-position: top right, center;
+    background-size: cover;
+    color: white;
+    /*background-color: fuchsia;*/
+    /*padding: 0 0 2000px 0;*/
+    margin-bottom: 50px;
+    /*background-color: #FFC107;*/
+
+}
+
+.content {
+    /*max-width: 50%;*/
+    /*padding: 70px 0 0 40px;*/
+    background-color: red;
+    height: 720px;
+    /*display: flex;*/
+    flex-direction: column;
+    width: 100%;
+    /*align-self: flex-start;*/
+    /*align-items: baseline;*/
+    /*justify-items: left;*/
+    /*justify-content: left;*/
+    /*justify-self: left;*/
+}
+
+.content a {
+    text-decoration: none;
+    font-family: "Roboto Light";
+    padding: 10px;
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: justify;
+    color: black;
+}
+
+.title {
+    font-family: 'Lagosta', cursiva;
+    font-size: 95px;
+    font-weight: 700;
+    padding: 100px 0 20px 20px;
+}
+
+.text {
+    font-family: "Roboto Light";
+    padding: 0 20px 20px 20px;
+    font-size: 24px;
+    font-weight: lighter;
+    text-align: justify;
+    width: 50%;
+}
+
+.startJourney {
+    margin: 0 20px 20px 20px;
+    background-color: #FFC107;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #212529;
+}

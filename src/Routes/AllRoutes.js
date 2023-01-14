@@ -5,6 +5,7 @@ import LadingPageHome from "../Pages/LadingPageHome";
 import PokemonDetail from '../Pages/PokemonDetail'
 import Register from "../Pages/Register";
 import Connect from "../Pages/Connect";
+import NewPokemonDetail from "../Pages/NewPokemonDetail";
 
 const AllRoutes = () => (
     <Router>
@@ -14,6 +15,7 @@ const AllRoutes = () => (
             <Route exact path="/pokedex" element={<PokemonDetail/>}/>
             <Route exact path="/registrar" element={<Register/>}/>
             <Route exact path="/logar" element={<Connect/>}/>
+            <Route exact path="/teste" element={<NewPokemonDetail/>}/>
         </Routes>
     </Router>
 );

@@ -9,6 +9,11 @@
 }
 .containerConnect {
     display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: url("../../Assets/Images/Pokémon-Wobbuffet-e-Equipe-Rocket-capa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 720px;
 }
 
 .containerConnect img {

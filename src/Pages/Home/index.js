@@ -52,19 +52,21 @@ export default function Home() {
         <div className="home">
             <div className='infoHomeCard'>
                 <div className="separatorBlack"/>
-                <div className="separatorWhite"/>
-                <div className="separatorBlack"/>
                 <h1>POKEDEX <img src={iconPokeboll} alt="icon-pokemon"/></h1>
             </div>
 
             <div className='cardsPokedex'>
                 {pokemons.results.map((pokemon, key) => {
+                    // console.log('hit', pokemon)
                     return (
                         <div className='cardHome' id='homePokedex' key={key}>
                             {/*<Card variant="outlined"> {pokemon.name}<MediaCard/></Card>*/}
                             {/*<Card variant="outlined">*/}
                             <MediaCard
                                 name={pokemon.name}
+                                // name={pokemon.abilities[0].ability.name}
+                                // name={ pokemon.types[1]?.type?.name || pokemon.types[0].type.name}
+                                // name={pokemon.types[1]?.type?.name || pokemon.types[0].type.name}
                                 url={pokemon.url}
                                 image={pokemon.sprites.other.dream_world.front_default || pokemon.sprites.front_default}
                                 stats={pokemon.stats}

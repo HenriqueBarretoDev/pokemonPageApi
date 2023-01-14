@@ -7,13 +7,14 @@ import boxImageVertical from '../../Assets/Images/pokemonLogoPretoVertical.png'
 import Footer from "../../Components/Footer";
 import Header from "../../Components/Header";
 import SeparatorBlack from "../../Components/Separators/SeparatorBlack";
+import api from "../../Services/api";
 
 const PokemonDetail = (props) => {
 
     const [currentPokemon, setCurrentPokemon] = useState({})
     const [currentIndex, setCurrentIndex] = useState(1)
-
     const [sprites, setSprites] = useState({})
+    const [abilities, setAbilities] = useState([])
 
     const {response, loading, error, setResponse} = useAxios({
         method: 'get',
@@ -57,12 +58,20 @@ const PokemonDetail = (props) => {
         const result = await axios.request(`https://pokeapi.co/api/v2/pokemon/${index}/`);
         setCurrentPokemon(result.data)
 
+        console.log('hitttt', result?.data)
+        // setAbilities(results.data.abilities.map(() => abilities.name))
+        // console.log(result.data)
         const assets = await axios.request(`https://pokeapi.co/api/v2/pokemon/${index}/`)
         setSprites(result.data.sprites.other.dream_world.front_default)
-        console.log(result.data.sprites.other.dream_world.front_default)
-
+        // console.log(result.data.sprites.other.dream_world.front_default)
+        return result.data
     }
 
+
+    ////////////daqui para baixo
+
+
+    //daqui p cima
     return (
         <div>
             <Header/>
@@ -82,13 +91,13 @@ const PokemonDetail = (props) => {
                                 <img
                                     src={currentPokemon.sprites && currentPokemon.sprites.other.dream_world.front_default}
                                     alt=""/>
-                                <h2 className='productInfoType'>Tipo: Poison </h2>
+                                <h2 className='productInfoType'>Tipo: </h2>
                             </div>
                             <div className="productInfo">
                                 {/*<h2 className='productInfoType'>Tipo: Poison </h2>*/}
                                 <p>
                                     Power: {currentPokemon.base_experience}</p>
-                                <p>Skills: Overgrow</p>
+                                <p>Skills:</p>
                                 <p>Skills: Chlorophyll</p>
                                 <p>Height: {currentPokemon.height} </p>
                                 <p>Weight: {currentPokemon.weight}</p>

@@ -5,6 +5,7 @@ import './index.css'
 import Header from '../../Components/Header'
 import {alertTitleClasses} from "@mui/material";
 import Button from '../../Components/Button'
+import Footer from "../../Components/Footer";
 
 const Register = () => {
 
@@ -108,7 +109,9 @@ const Register = () => {
                         <input type="submit" className={'send'}/>
                     </label>
                 </form>
+
             </div>
+            <Footer/>
         </div>
     )
 }

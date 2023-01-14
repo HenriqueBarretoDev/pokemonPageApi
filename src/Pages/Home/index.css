@@ -91,25 +91,49 @@ html {
 
 .infoHomeCard h1 {
     display: flex;
-    color: whitesmoke;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
-    font-weight: 700;
-    font-family: sans-serif;
-    background: linear-gradient(270deg, red, white);
+    font-size: 60px;
+    font-weight: 400;
+    color: #212529;
+    font-family: 'Lobster', cursive;
+    background: linear-gradient(175deg, red, #212529);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .infoHomeCard img {
     height: 30px;
-    transition: all 1s;
-    position: relative;
-    left: 10px;
+    margin-left: 10px;
 }
 
-.infoHomeCard img:hover {
-    -webkit-transform: rotateZ(360deg);
-    transform: rotateZ(360deg);
+.infoHomeCard img {
+    animation: pulse 0.7s infinite;
+    display: flex;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    z-index: 1;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        -webkit-filter: brightness(100%);
+    }
+    100% {
+        -webkit-transform: scale(1.1);
+        -webkit-filter: brightness(150%);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        filter: brightness(100%);
+    }
+    100% {
+        transform: scale(1.1);
+        filter: brightness(200%);
+    }
 }

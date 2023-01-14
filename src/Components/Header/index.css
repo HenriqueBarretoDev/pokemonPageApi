@@ -3,9 +3,10 @@
     background-color: #212529;
     color: white;
     justify-content: space-between;
-    padding: 0 50px;
     min-height: 70px;
     font-family: "Comic Sans MS";
+    transition: all 0.2s;
+    z-index: 5;
 }
 
 @media (max-width: 480px) {
@@ -16,13 +17,13 @@
 
 .header .ContentLeft {
     display: flex;
-    align-items: center
+    align-items: center;
+    padding-left: 25px;
 }
 
 @media (max-width: 480px) {
     .ContentLeft a {
-        /*display: none;*/
-        /*background-color: blue;*/
+        display: none;
     }
 }
 
@@ -44,21 +45,15 @@
     height: 20px;
     margin-right: 20px;
     margin-top: 5px;
-}
-
-.iconPokemon {
-    transition: all 1s;
-}
-
-.iconPokemon:hover {
-    -webkit-transform: rotateZ(360deg);
-    transform: rotateZ(360deg);
+    transition: all;
 }
 
 .contentRight {
     display: flex;
     align-items: center;
     transition: all 0.2s;
+    justify-content: right;
+    padding-right: 25px;
 }
 
 .contentRight button, input {
@@ -67,15 +62,6 @@
     text-align: center;
 }
 
-/*.contentRight button {*/
-/*    margin: 0 6px;*/
-/*    padding: 6px 15px;*/
-/*    transition: transform 200ms, box-shadown 200ms;*/
-/*    box-shadow: whitesmoke 4px 4px 0;*/
-/*    cursor: pointer;*/
-/*}*/
-
-
 .contentRight a {
     text-decoration: none;
     background-color: white;
@@ -83,13 +69,7 @@
     padding: 6px 15px;
     transition: all 0.2s;
     margin-left: 10px;
-
 }
-
-/*.contentRight button:hover {*/
-/*    -webkit-transform: scale(1.5);*/
-/*    transform: scale(1.2);*/
-/*}*/
 
 .contentRight a:hover {
     -webkit-transform: scale(0.5);
@@ -108,30 +88,12 @@
     cursor: pointer;
 }
 
-/*.signUp button {*/
-/*    font-size: 16px;*/
-/*    font-family: "Comic Sans MS";*/
-/*    !*background-color: #cb193f;*!*/
-/*    transition: all 0.2s;*/
-/*}*/
-
-/*.signUp button:active {*/
-/*    transform: translateY(-3px);*/
-/*}*/
-
-/*.logIn, .signUp button:active {*/
-/*    transform: translateY(4px) translateX(4px);*/
-/*    box-shadow: #212529 0 0 0;*/
-/*}*/
-
-.input-group {
+.inputGroup {
     position: relative;
     padding-right: 40px;
-
-
 }
 
-.input-group input {
+.inputGroup input {
     border: solid 1.5px #9e9e9e;
     border-radius: 10px;
     background: none;
@@ -139,11 +101,10 @@
     font-size: 10px;
     color: #f5f5f5;
     transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
-    /*background: red;*/
     min-width: 180px;
 }
 
-.input-group label {
+.inputGroup label {
     position: absolute;
     left: 16px;
     color: #e8e8e8;
@@ -152,19 +113,19 @@
     transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-group input:focus {
+.inputGroup input:focus {
     outline: none;
     border: 1.5px solid #FFC107;
 }
 
-.input-group input:focus ~ label {
+.inputGroup input:focus ~ label {
     transform: translateY(-50%) scale(0.8);
     background-color: #212529;
     padding: 0 0.2em;
     color: #FFC107;
 }
 
-button {
+.contentRight button {
     font-size: 14px;
     padding: 0.5em 2em;
     border: transparent;
@@ -174,14 +135,48 @@ button {
     border-radius: 4px;
     font-family: "Comic Sans MS";
     margin-right: 5px;
+    cursor: pointer;
 }
 
-button:hover {
+.contentRight button:hover {
     background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgb(238, 21, 21) 0%, rgb( 34, 34, 36) 100%);
-    /*color: black;*/
+    background: linear-gradient(90deg, rgb(238, 21, 21) 0%, rgb(34, 34, 36) 100%);
 }
 
-button:active {
-    transform: translate(0em, 0.2em);
+.iconPokemon {
+    height: 40px;
+    width: 40px;
+    cursor: default;
+}
+
+@keyframes loading {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.iconPokemon.is-animating {
+    animation: loading 4s linear infinite;
+}
+
+/*nav {*/
+/*    position: sticky; top: 0;*/
+/*}*/
+.fixedMenu {
+    position: fixed;
+    top: 0;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgb(238, 21, 21) 0%, rgb(34, 34, 36) 100%);
+    width: 100%;
+    display: flex;
+
 }

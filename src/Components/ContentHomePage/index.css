@@ -1,37 +1,21 @@
 .contentHomePage {
     display: flex;
     flex-direction: column;
-    /*background-image: url('../../Assets/Images/Ash_Ketchum_World_Champion_Screenshot_2.jpg');*/
     background-image: url('../../Assets/Images/a1f394fc4adc3fe12cf37e3542f764251651845249_main.png');
-    /*height: 100%;*/
-    width: 100%;
-    min-height: 720px;
+    min-height: 100vh;
     background-repeat: no-repeat, repeat-x;
     background-position: top right, center;
     background-size: cover;
     color: white;
-    /*background-color: fuchsia;*/
-    /*padding: 0 0 2000px 0;*/
-    /*margin-bottom: 50px;*/
-    /*background-color: #FFC107;*/
     font-family: "Comic Sans MS";
-
 }
 
 .contentHomePage main {
-    padding-left: 30px;
-}
-
-.content {
-    background-color: red;
-    height: 720px;
-    flex-direction: column;
-    width: 100%;
+    margin-left: 40px;
 }
 
 .content a {
     text-decoration: none;
-    /*font-family: "Roboto Light";*/
     padding: 10px;
     font-size: 18px;
     font-weight: lighter;
@@ -39,32 +23,56 @@
     color: black;
 }
 
-.title {
-    /*font-family: 'Lagosta', cursiva;*/
-    font-size: 70px;
-    font-weight: 700;
-    /*padding: 100px 0 20px 20px;*/
-    /*border: 1px solid black;*/
+.titleHomePage {
+    font-size: 100px;
+    font-weight: 400;
+    color: #212529;
+    font-family: 'Lobster', cursive;
+    background: linear-gradient(175deg, red, #212529);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.text {
-    /*font-family: "Roboto Light";*/
-    /*padding: 0 20px 20px 20px;*/
+.textHomePage {
     font-size: 24px;
     font-weight: lighter;
     text-align: justify;
-    width: 50%;
+    width: 40%;
     margin-bottom: 40px;
-    background-color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 20px;
     color: black;
 }
 
+.alignButtonStartJourney {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    align-items: center;
+    width: 40%;
+}
+
 .startJourney {
-    background-color: #FFC107;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: bold;
     padding: 10px 20px;
-    text-decoration: none;
-    color: #212529;
+    /*margin-left: 120px;*/
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    background: linear-gradient(175deg, red, #212529);
+    box-shadow: 0 0 25px rgb(0, 140, 255);
+    max-width: 160px;
+}
+
+.startJourney:hover {
+    box-shadow: 0 0 5px rgb(0, 140, 255),
+    0 0 25px #FFC107,
+    0 0 50px #FFC107,
+    0 0 100px #FFC107;
 }

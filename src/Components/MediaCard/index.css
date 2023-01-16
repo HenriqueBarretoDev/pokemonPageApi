@@ -1,3 +1,16 @@
+.cardPokemons {
+    max-width: 260px;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
+    min-height: 280px;
+    max-height: 280px;
+    --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+    background: var(--background);
+    border: 1px solid coral;
+    border-radius: 1rem;
+}
+
 .cardModel {
     height: 150px;
     width: 150px;
@@ -62,5 +75,136 @@
     align-self: center;
     display: flex;
     height: 100%;
+}
 
+.cardPokemons {
+    width: 260px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.title {
+    font-weight: 900;
+   }
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.cardPokemons:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flipCardFront, .flipCardBack {
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+.flipCardBack {
+    transform: rotateY(180deg);
+    display: flex;
+       flex-direction: column;
+    align-content: baseline;
+    align-self: baseline;
+    justify-content: start;
+}
+
+.contentInfoBack {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.titleIdBack {
+       font-family: "Comic Sans MS";
+    font-size: 18px;
+    font-weight: 300;
+    position: relative;
+    bottom: 30px;
+    white-space: nowrap;
+}
+
+.titleIdBack span {
+    text-transform: uppercase;
+}
+
+.imgPokemonBack {
+    flex-direction: column;
+    justify-items: center;
+    align-self: center;
+    max-width: 35%;
+    margin: 0 auto;
+    position: relative;
+    bottom: 20px;
+}
+
+.imgPokemonBack img {
+    min-height: 120px;
+    min-width: 120px;
+}
+
+.titlePowerBack {
+    flex-direction: column;
+    position: relative;
+    bottom: 50px;
+}
+
+.iconAttacks img {
+    max-width: 35px;
+}
+
+.iconAttacks {
+    display: flex;
+    align-items: center;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+}
+
+.iconAttacksHability img {
+    max-width: 15px;
+    margin-right: 4px;
+}
+
+.habilites {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    align-self: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-self: center;
+}
+
+.habilites span {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 5px 0;
+    font-family: "Comic Sans MS";
+    font-size: 18px;
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+.containerBottomCardPokemons {
+    display: flex;
+    flex-direction: row;
 }

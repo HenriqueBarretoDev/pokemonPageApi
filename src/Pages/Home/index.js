@@ -48,6 +48,14 @@ export default function Home() {
             })
     }
 
+    function goToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    }
+
+
     return (
         <div className="home">
             <div className='infoHomeCard'>
@@ -57,32 +65,27 @@ export default function Home() {
 
             <div className='cardsPokedex'>
                 {pokemons.results.map((pokemon, key) => {
-                    // console.log('hit', pokemon)
                     return (
                         <div className='cardHome' id='homePokedex' key={key}>
-                            {/*<Card variant="outlined"> {pokemon.name}<MediaCard/></Card>*/}
-                            {/*<Card variant="outlined">*/}
                             <MediaCard
                                 name={pokemon.name}
-                                // name={pokemon.abilities[0].ability.name}
-                                // name={ pokemon.types[1]?.type?.name || pokemon.types[0].type.name}
-                                // name={pokemon.types[1]?.type?.name || pokemon.types[0].type.name}
+                                types={pokemon.types[1]?.type?.name || pokemon.types[0].type.name}
                                 url={pokemon.url}
                                 image={pokemon.sprites.other.dream_world.front_default || pokemon.sprites.front_default}
+                                imageBack={pokemon.sprites.front_default || pokemon.sprites.other.home.front_default}
+                                imageBack2={pokemon.sprites.back_default || pokemon.sprites.other.home.front_default}
                                 stats={pokemon.stats}
                                 base_experience={pokemon.base_experience}
                                 species={pokemon.species.name}
                                 id={pokemon.id}
                                 weight={pokemon.weight}
+                                abilite1={pokemon.abilities[0].ability.name}
+                                abilite2={pokemon.abilities[1]?.ability.name || pokemon.abilities[0].ability.name}
                             />
-                            {/*</Card>*/}
-
                         </div>
                     )
                 })}
                 <div className="buttonsNextAndPrevious">
-                    {/*<button disabled={!pokemons.previous} onClick={() => getAll(pokemons.previous)}>Anterior</button>*/}
-                    {/*<button disabled={!pokemons.next} onClick={() => getAll(pokemons.next)}>Próximo</button>*/}
                     <button disabled={!pokemons.previous}
                             onClick={() => getAll(pokemons.previous)}
                             className="button-73" role="button">Anterior

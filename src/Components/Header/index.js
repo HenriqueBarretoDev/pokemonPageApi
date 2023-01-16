@@ -34,13 +34,20 @@ const Header = (backgroundImage, backgroundImageStyle) => {
     useEffect(() => {
         controlScroll()
     }, [])
+
+    function goToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    }
     return (
         <nav className='header' id='header'>
             <div className="ContentLeft">
                 <Link to='/' className='hiddenMobile'>
                     <img className="iconPokemon is-animating" src={iconPokemon} alt="ícone pokémon"/>
                 </Link>
-                <Link to='/'>Home</Link>
+                <Link to='/' onClick={goToTop()}>Home</Link>
 
                 <Link to='/pokedex'>Pokédex</Link>
                 <a href='https://www.google.com/search?hl=pt-BR&sxsrf=ALiCzsYZ9O2tQIaP74eQ2c3egpq625tK1g:1672961843664&q=filmes+pok%C3%A9mon&spell=1&sa=X&ved=2ahUKEwje86fDzLH8AhX3mZUCHStmDnAQBSgAegQICBAB&biw=1280&bih=913&dpr=1'>Filmes</a>

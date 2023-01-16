@@ -18,6 +18,12 @@
     max-height: 80px;
     min-height: 80px;
     max-width: 80px;
+    animation: pulse 1.2s infinite;
+    display: flex;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    z-index: 1;
 }
 
 .containerConnectLeft {

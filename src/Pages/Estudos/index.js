@@ -50,18 +50,8 @@ const Estudos = () => {
 
     return (
         <div className="inp">
-            {/*<button onChange={pegarDadosDoNome.e.target.value}> next</button>*/}
-
-            {/*<form action="">*/}
-            {/*<input type="text" onChange={pegarDadosDoNome} placeholder={'digite seu nome'}/>*/}
-            {/*<input type="number" onChange={pegarNumeros} placeholder={'digite um número'}/>*/}
-            {/*<input type="password" onChange={pegarSenha} placeholder={'digite sua senha'}/>*/}
-            {/*<input type="email" onChange={pegarEmail} placeholder={'digite seu email'}/>*/}
 
 
-            {/*</form>*/}
-
-            {/*maneira mais simples abaixo */}
             <div className="maneiraFacil">
                 <p>Informe seus dados para cadastrar</p>
 
@@ -76,12 +66,10 @@ const Estudos = () => {
                     <input type="password" onChange={pegarDadosForm} placeholder={'confirmar senha'}
                            name={'repetirSenha'}/>
                     <span>
-                       {/*Sim<input type="radio" onChange={pegarDadosForm} name={'sim'}/>*/}
-                        {/* Não<input type="radio" onChange={pegarDadosForm} name={'não'}/>*/}
 
                    </span>
 
-                    {/*aqui*/}
+
                     <div style={{display: 'flex', flexDirection: 'row'}}>
                         <div>
                             <input
@@ -94,7 +82,6 @@ const Estudos = () => {
 
                             />
                             <label htmlFor="radio-item-1">Sim</label>
-                            {/*{currentRadioValue === 'on' && <div>sim</div>}*/}
                         </div>
                         <div>
                             <input
@@ -106,10 +93,8 @@ const Estudos = () => {
                                 defaultChecked={currentRadioValue === 'off'}
                             />
                             <label htmlFor="radio-item-2">Não</label>
-                            {/*{currentRadioValue === 'off' && <div> não</div>}*/}
                         </div>
                     </div>
-                    {/*até aqui*/}
                     <input type="submit"/>
                 </form>
             </div>

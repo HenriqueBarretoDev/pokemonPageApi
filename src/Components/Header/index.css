@@ -9,12 +9,6 @@
     z-index: 5;
 }
 
-@media (max-width: 480px) {
-    .header {
-        background-color: red;
-    }
-}
-
 .header .ContentLeft {
     display: flex;
     align-items: center;
@@ -168,9 +162,6 @@
     animation: loading 4s linear infinite;
 }
 
-/*nav {*/
-/*    position: sticky; top: 0;*/
-/*}*/
 .fixedMenu {
     position: fixed;
     top: 0;
@@ -178,5 +169,4 @@
     background: linear-gradient(90deg, rgb(238, 21, 21) 0%, rgb(34, 34, 36) 100%);
     width: 100%;
     display: flex;
-
 }

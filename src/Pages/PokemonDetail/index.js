@@ -94,7 +94,6 @@ const PokemonDetail = (props) => {
                                 <h2 className='productInfoType'>Tipo: </h2>
                             </div>
                             <div className="productInfo">
-                                {/*<h2 className='productInfoType'>Tipo: Poison </h2>*/}
                                 <p>
                                     Power: {currentPokemon.base_experience}</p>
                                 <p>Skills:</p>

@@ -3,9 +3,10 @@ import {useNavigate} from "react-router-dom"
 import './index.css'
 
 const ContentHomePage = () => {
+
     const navigate = useNavigate();
 
-    function gotoPokemon() {
+    function goToPokemon() {
         navigate("/logar")
     }
 
@@ -18,7 +19,7 @@ const ContentHomePage = () => {
                     Pronto para ser o melhor treinador pokemon do mundo?
                 </p>
                 <div className={'alignButtonStartJourney'}>
-                <button className={'startJourney'} onClick={gotoPokemon}>Iniciar jornada</button>
+                <button className={'startJourney'} onClick={goToPokemon}>Iniciar jornada</button>
                 </div>
             </main>
         </div>

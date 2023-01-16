@@ -63,7 +63,6 @@ const NewPokemonDetail = (props) => {
 
                     <div className="productSliderCarrossel">
                         <div className="productDescription">
-                            {/*<h1>n°{currentPokemon.id} -{currentPokemon.name}</h1>*/}
                             <h1>n°1-{pokemons?.results?.name?.filter((currentName) => {
                                 return currentName
                                 console.log('asdasd', currentName)

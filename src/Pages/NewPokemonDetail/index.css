@@ -117,14 +117,10 @@
     display: flex;
     margin-top: 400px;
     width: 100%;
-    /*margin-right: 80px;*/
-    /*align-content: space-around;*/
     justify-content: center;
     color: #212529;
     z-index: 2;
     position: absolute;
-    /*background-color: red;*/
-
 }
 
 .previousAndNextCards button {
@@ -137,7 +133,7 @@
 .previousAndNextCards button:hover {
     -webkit-transform: scale(0.5);
     transform: scale(1.1);
-}
+  }
 
 .previousCard button {
     background-color: #FFC107;
@@ -157,9 +153,7 @@
     border-radius: 30px;
     box-shadow: 0 28px 79px 0 rgba(10, 22, 31, 0.35);
     position: absolute;
-    /*background-color: #212529;*/
-    /*adicionado por mim*/
-    background-color: #212529;
+        background-color: #212529;
     top: 50%;
     right: 0;
     transform: translateY(-50%);

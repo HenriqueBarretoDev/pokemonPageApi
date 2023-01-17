@@ -85,7 +85,7 @@
 
 .title {
     font-weight: 900;
-   }
+}
 
 .flip-card-inner {
     position: relative;
@@ -116,7 +116,7 @@
 .flipCardBack {
     transform: rotateY(180deg);
     display: flex;
-       flex-direction: column;
+    flex-direction: column;
     align-content: baseline;
     align-self: baseline;
     justify-content: start;
@@ -129,7 +129,7 @@
 }
 
 .titleIdBack {
-       font-family: "Comic Sans MS";
+    font-family: "Comic Sans MS";
     font-size: 18px;
     font-weight: 300;
     position: relative;
@@ -171,6 +171,8 @@
     align-items: center;
     font-family: "Comic Sans MS";
     font-weight: bold;
+    position: relative;
+    top: 14px;
 }
 
 .iconAttacksHability img {

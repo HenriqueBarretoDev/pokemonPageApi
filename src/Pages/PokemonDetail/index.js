@@ -57,21 +57,11 @@ const PokemonDetail = (props) => {
     const getPokemon = async (index) => {
         const result = await axios.request(`https://pokeapi.co/api/v2/pokemon/${index}/`);
         setCurrentPokemon(result.data)
-
-        console.log('hitttt', result?.data)
-        // setAbilities(results.data.abilities.map(() => abilities.name))
-        // console.log(result.data)
         const assets = await axios.request(`https://pokeapi.co/api/v2/pokemon/${index}/`)
         setSprites(result.data.sprites.other.dream_world.front_default)
-        // console.log(result.data.sprites.other.dream_world.front_default)
         return result.data
     }
 
-
-    ////////////daqui para baixo
-
-
-    //daqui p cima
     return (
         <div>
             <Header/>
@@ -114,7 +104,6 @@ const PokemonDetail = (props) => {
                     </div>
                 </div>
             </div>
-            <SeparatorBlack/>
             <Footer/>
         </div>
 

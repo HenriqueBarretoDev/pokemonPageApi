@@ -18,15 +18,21 @@ const Connect = () => {
                         <form action="">
                             <div className="formInfo">
                                 <input required="" placeholder="Name" className="formField" type="text"/>
-                                <label className="form__label" htmlFor="name">Email</label>
+                                <label className="formLabel" htmlFor="name">Email</label>
                             </div>
                             <div className="formInfo">
                                 <input required="" placeholder="Name" className="formField" type="password"/>
-                                <label className="form__label" htmlFor="name">Senha</label>
+                                <label className="formLabel" htmlFor="name">Senha</label>
                             </div>
                             <div className={'buttonConnect'}>
                                 <button>
                                     Entrar
+                                    <div className="arrowWrapper">
+                                        <div className="arrow"></div>
+                                    </div>
+                                </button>
+                                <button>
+                                    Esqueci a senha
                                     <div className="arrow-wrapper">
                                         <div className="arrow"></div>
                                     </div>

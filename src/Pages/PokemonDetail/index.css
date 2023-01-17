@@ -6,8 +6,8 @@
     background-size: cover;
     position: relative;
     overflow: hidden;
-    display: flex
-
+    display: flex;
+    padding-bottom: 100px;
 }
 
 @media screen and (max-width: 992px) {
@@ -326,6 +326,7 @@
     transition: all 0.5s;
     overflow: hidden;
     position: relative;
+    top: 45px;
     border-radius: 30px;
     background-size: cover;
     box-shadow: 0 30px 139px 0 rgba(10, 22, 31, 0.26);

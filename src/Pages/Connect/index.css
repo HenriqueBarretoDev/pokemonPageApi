@@ -55,6 +55,10 @@
     margin-top: 10px;
     width: 100%;
     max-width: 180px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    align-self: center;
 }
 
 .formField {
@@ -68,19 +72,22 @@
     padding: 7px 0;
     background: transparent;
     transition: border-color 0.2s;
+    border-width: 3px;
+    border-image: linear-gradient(to right, white, red);
+    border-image-slice: 1;
 }
 
 .formField::placeholder {
     color: transparent;
 }
 
-.formField:placeholder-shown ~ .form__label {
+.formField:placeholder-shown ~ .formLabel {
     font-size: 17px;
     cursor: text;
     top: 20px;
 }
 
-.form__label {
+.formLabel {
     position: absolute;
     top: 0;
     display: block;
@@ -98,7 +105,7 @@
     border-image-slice: 1;
 }
 
-.formField:focus ~ .form__label {
+.formField:focus ~ .formLabel {
     position: absolute;
     top: 0;
     display: block;
@@ -112,6 +119,12 @@
     box-shadow: none;
 }
 
+.buttonConnect {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
 .buttonConnect button {
     --primary-color: white;
     --secondary-color: black;
@@ -120,7 +133,7 @@
     --arrow-stroke: 2px;
     box-sizing: border-box;
     border: 0;
-    border-radius: 20px;
+    border-radius: 10px;
     color: var(--secondary-color);
     padding: 1em 1.8em;
     background: var(--primary-color);
@@ -132,7 +145,7 @@
     margin-top: 20px;
 }
 
-.buttonConnect button .arrow-wrapper {
+.buttonConnect button .arrowWrapper {
     display: flex;
     justify-content: center;
     align-items: center;

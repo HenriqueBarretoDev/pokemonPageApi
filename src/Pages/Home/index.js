@@ -2,12 +2,13 @@ import React, {useEffect, useState} from "react";
 
 import './index.css'
 import api from '../../Services/api'
-import Card from '@mui/material/Card';
 import MediaCard from "../../Components/MediaCard";
 import iconPokeboll from '../../Assets/Icons/icon-pokemon-header.webp'
 
+
 export default function Home() {
 
+    const [loading, setLoading] = useState(true);
     const [pokemons, setPokemons] = useState({
         count: 0,
         next: null,
@@ -23,9 +24,11 @@ export default function Home() {
         api
             .get(url)
             .then((response) => {
+
                 const pokemonsList = response.data.results.map(async (pokemon) => {
                     return await getPokemon(pokemon.url)
                 })
+
                 Promise.all(pokemonsList).then((result) => {
                     setPokemons({
                         count: response.data.count,
@@ -34,6 +37,7 @@ export default function Home() {
                         results: result
                     })
                 })
+                setLoading(false);
             })
             .catch((err) => {
                 console.error("ops! ocorreu um erro" + err);
@@ -55,14 +59,23 @@ export default function Home() {
         });
     }
 
-
     return (
         <div className="home">
             <div className='infoHomeCard'>
-                <div className="separatorBlack"/>
                 <h1>POKEDEX <img src={iconPokeboll} alt="icon-pokemon"/></h1>
             </div>
-
+            {loading && (
+                <div className="loading">
+                    <div className={'loadingSkeleton'} />
+                    <div className={'loadingSkeleton'} />
+                    <div className={'loadingSkeleton'} />
+                    <div className={'loadingSkeleton'} />
+                    <div className={'loadingSkeleton'} />
+                    <div className={'loadingSkeleton'} />
+                    <div className={'loadingSkeleton'} />
+                    <div className={'loadingSkeleton'} />
+                </div>
+            )}
             <div className='cardsPokedex'>
                 {pokemons.results.map((pokemon, key) => {
                     return (
@@ -96,6 +109,7 @@ export default function Home() {
                     </button>
                 </div>
             </div>
+
         </div>
     );
 }

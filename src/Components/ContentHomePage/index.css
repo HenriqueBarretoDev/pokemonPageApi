@@ -1,17 +1,28 @@
 .contentHomePage {
     display: flex;
     flex-direction: column;
-    background-image: url('../../Assets/Images/a1f394fc4adc3fe12cf37e3542f764251651845249_main.png');
+    background-image: url('../../Assets/Images/charmanderGif.gif');
     min-height: 100vh;
     background-repeat: no-repeat, repeat-x;
     background-position: top right, center;
     background-size: cover;
     color: white;
     font-family: "Comic Sans MS";
+    align-items: self-end;
+    justify-items: self-end;
+    align-self: self-end;
+    align-content: end;
+    justify-self: end;
+    justify-content: start;
 }
 
 .contentHomePage main {
-    margin-left: 40px;
+    margin-right: 40px;
+    align-content: end;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-bottom: 200px;
 }
 
 .content a {
@@ -27,30 +38,57 @@
     font-size: 100px;
     font-weight: 400;
     color: #212529;
-    font-family: 'Lobster', cursive;
+    font-family: 'Games', sans-serif;
     background: linear-gradient(175deg, red, #212529);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding-right: 20px;
+
+}
+@media (max-width: 2560px) {
+    .titleHomePage {
+        font-size: 120px;
+    }
+}
+@media (max-width: 1440px) {
+    .titleHomePage {
+        font-size: 80px;
+    }
 }
 
+
 .textHomePage {
-    font-size: 24px;
-    font-weight: lighter;
+    font-size: 18px;
+    font-weight: 300;
     text-align: justify;
-    width: 40%;
+    line-height: 35px;
+    font-family: 'Microsport', sans-serif;
     margin-bottom: 40px;
     background-color: rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    border-radius: 20px;
+    background-color: whitesmoke;
+    padding: 15px 30px;
+    border-radius: 30px;
     color: black;
+    max-width: 40%;
+    background: linear-gradient(175deg, red, #fff);
+}
+@media (max-width: 2560px) {
+    .textHomePage {
+        font-size: 26px;
+    }
+}
+@media (max-width: 1440px) {
+    .textHomePage {
+        font-size: 18px;
+    }
 }
 
 .alignButtonStartJourney {
     display: flex;
-    flex-direction: column;
     padding-left: 30px;
-    align-items: center;
-    width: 40%;
+    align-content: end;
+    flex-direction: column;
+    align-items: end;
 }
 
 .startJourney {
@@ -66,8 +104,10 @@
     transition-property: box-shadow;
     background: linear-gradient(175deg, red, #212529);
     box-shadow: 0 0 25px rgb(0, 140, 255);
-    max-width: 160px;
+    max-width: 260px;
+    min-width: 260px;
     cursor: pointer;
+    margin-right: 220px;
 }
 
 .startJourney:hover {

@@ -10,7 +10,6 @@ const LadingPageHome = () => {
         <div className="LadingPageHome">
             <Header/>
             <ContentHomePage/>
-            <Home/>
             <Footer/>
         </div>
     )

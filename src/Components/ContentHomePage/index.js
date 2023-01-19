@@ -13,7 +13,7 @@ const ContentHomePage = () => {
     return (
         <div className="contentHomePage">
             <main>
-                <h1 className="titleHomePage">Super Pokémon</h1>
+                <h1 className="titleHomePage">Super Pokemon</h1>
                 <p className="textHomePage">
                     Comece sua nova aventura na região de Pallet, nesta aventura de mundo aberto para o Nintendo Switch.
                     Pronto para ser o melhor treinador pokemon do mundo?

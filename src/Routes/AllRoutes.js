@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 import LadingPageHome from "../Pages/LadingPageHome";
@@ -7,9 +7,12 @@ import Register from "../Pages/Register";
 import Connect from "../Pages/Connect";
 import NewPokemonDetail from "../Pages/NewPokemonDetail";
 
+// const [pagination, setPagination] = useState('')
+
 const AllRoutes = () => (
     <Router>
         {/*<Home/>*/}
+        {/*{pagination && (*/}
         <Routes>
             <Route exact path="/" element={<LadingPageHome/>}/>
             <Route exact path="/pokedex" element={<PokemonDetail/>}/>
@@ -17,6 +20,7 @@ const AllRoutes = () => (
             <Route exact path="/logar" element={<Connect/>}/>
             <Route exact path="/teste" element={<NewPokemonDetail/>}/>
         </Routes>
+        {/*) }*/}
     </Router>
 );
 

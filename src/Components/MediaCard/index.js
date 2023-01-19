@@ -220,7 +220,7 @@ export default function MediaCard(
         <Card className={'cardPokemons'}>
             <div className="flip-card-inner">
                 <div className="flipCardFront">
-                    <CardContent className='contentInfo'>
+                    <div className='contentInfo'>
                         <div className='contentTitlePokemonsCard'>
                             <Typography variant="h5" component="div" className='titleId'>
                                 <p>n°{id}</p>
@@ -229,23 +229,27 @@ export default function MediaCard(
                                 <p>{name}</p>
                             </Typography>
                         </div>
-                    </CardContent>
+                    </div>
 
                     <div className="imgPokemon">
                         <img className='cardModel' src={image} alt="pokemon imagem"/>
                     </div>
 
                     <CardActions className='titlePower'>
-                        <span>POWER: {base_experience} {powerEvolution(base_experience)}</span>
+                        <div className={'powerAndWeightDetail'}>
+                            <span>POWER: {base_experience}</span>
+                            <span>{powerEvolution(base_experience)}</span>
+                        </div>
 
-                        <span style={{display: 'flex', flexDirection: 'column'}}>WEIGHT: {weight}
-                            <div style={{color: 'darkred'}}>{weightEvolution(weight)}</div>
-                        </span>
+                        <div className={'powerAndWeightDetail'}>
+                            <span style={{display: 'flex', flexDirection: 'column'}}>WEIGHT: {weight}</span>
+                            <span style={{color: 'darkred'}}>{weightEvolution(weight)}</span>
+                        </div>
                     </CardActions>
                 </div>
 
                 <div className="flipCardBack">
-                    <CardContent className='contentInfo' style={{margin: 0}}>
+                    <div className='contentInfo'>
                         <div className='contentTitlePokemonsCard'>
                             <Typography variant="h5" component="div" className='titleId'>
                                 <p>n°{id}</p>
@@ -254,7 +258,7 @@ export default function MediaCard(
                                 <p>{name}</p>
                             </Typography>
                         </div>
-                    </CardContent>
+                    </div>
 
                     <div className="containerBottomCardPokemons">
                         <div className="imgPokemonBack">
@@ -265,7 +269,7 @@ export default function MediaCard(
                         <CardContent className='contentInfoBack'>
                             <CardActions variant="h5" component="div">
                                 <p className='titleIdBack'>Tipo: {types}
-                                    <span>
+                                    <span style={{position:'relative',top:'8px',left:'5px'}}>
                                         {getType(types)}
                                     </span>
                                 </p>

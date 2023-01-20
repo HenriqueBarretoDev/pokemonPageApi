@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import {Link, useHistory, useLocation} from 'react-router-dom';
 import './index.css'
 
@@ -42,20 +42,24 @@ const Register = () => {
 
     function pegarDadosForm(e) {
         e.preventDefault()
-        // alert('Dados enviados')
         setDados({[e.target.name]: e.target.value})
-        console.log('hit', dados)
-
     }
 
     function pararEnvio(e) {
         // e.preventDefault()
-        alert('cliquei')
+        alert('hit')
     }
 
-    // function handleGoToLogin() {
-    //     location.history.push('/');
-    // }
+
+    function goToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    }
+    useEffect(()=>{
+        goToTop()
+    },{})
 
     return (
         <div className="register">

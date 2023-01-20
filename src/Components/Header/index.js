@@ -74,6 +74,9 @@ const Header = (backgroundImage, backgroundImageStyle) => {
                 </div>
                 <button type={"submit"} onClick={goToConnect}>Conecte-se</button>
                 <button type={"button"} onClick={goToRegister}>Inscrever-se</button>
+                <div>
+
+                </div>
             </form>
         </nav>
     )

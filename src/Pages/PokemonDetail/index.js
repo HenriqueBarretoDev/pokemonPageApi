@@ -36,7 +36,11 @@ const PokemonDetail = (props) => {
             }
 
         })()
-    }, [currentIndex])
+    },
+        [currentIndex])
+    useEffect(() => {
+        goToTop()
+    }, {})
 
     const pagination = async (url) => {
         const result = await axios.request(url);
@@ -57,6 +61,13 @@ const PokemonDetail = (props) => {
         const assets = await axios.request(`https://pokeapi.co/api/v2/pokemon/${index}/`)
         setSprites(result.data.sprites.other.dream_world.front_default)
         return result.data
+    }
+
+    function goToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
     }
 
     return (

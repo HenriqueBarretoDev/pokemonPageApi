@@ -5,7 +5,6 @@ import api from '../../Services/api'
 import MediaCard from "../../Components/MediaCard";
 import iconPokeboll from '../../Assets/Icons/icon-pokemon-header.webp'
 
-
 export default function Home() {
 
     const [loading, setLoading] = useState(true);
@@ -28,8 +27,7 @@ export default function Home() {
                 const pokemonsList = response.data.results.map(async (pokemon) => {
                     return await getPokemon(pokemon.url)
                 })
-
-                Promise.all(pokemonsList).then((result) => {
+                                Promise.all(pokemonsList).then((result) => {
                     setPokemons({
                         count: response.data.count,
                         next: response.data.next,
@@ -52,13 +50,6 @@ export default function Home() {
             })
     }
 
-    function goToTop() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth',
-        });
-    }
-
     return (
         <div className="home">
             <div className='infoHomeCard'>
@@ -66,14 +57,14 @@ export default function Home() {
             </div>
             {loading && (
                 <div className="loading">
-                    <div className={'loadingSkeleton'} />
-                    <div className={'loadingSkeleton'} />
-                    <div className={'loadingSkeleton'} />
-                    <div className={'loadingSkeleton'} />
-                    <div className={'loadingSkeleton'} />
-                    <div className={'loadingSkeleton'} />
-                    <div className={'loadingSkeleton'} />
-                    <div className={'loadingSkeleton'} />
+                    <div className={'loadingSkeleton'}/>
+                    <div className={'loadingSkeleton'}/>
+                    <div className={'loadingSkeleton'}/>
+                    <div className={'loadingSkeleton'}/>
+                    <div className={'loadingSkeleton'}/>
+                    <div className={'loadingSkeleton'}/>
+                    <div className={'loadingSkeleton'}/>
+                    <div className={'loadingSkeleton'}/>
                 </div>
             )}
             <div className='cardsPokedex'>

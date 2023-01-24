@@ -4,3 +4,15 @@ button:active {
 html {
     scroll-behavior: smooth;
 }
+
+@media only screen and (max-width: 821px) {
+    .hiddenMobile {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 822px) {
+    .hiddenDesktop {
+        display: none;
+    }
+}

@@ -123,7 +123,7 @@ export default function MediaCard(
             )
         } else if (base_experience <= 150) {
             return (
-                <div className={'powerEvolution'}>
+                <div className='powerEvolution'>
                     <span>
                     <img src={starIcon} alt="" style={{maxHeight: '14px'}}/>
                     <img src={starIcon} alt="" style={{maxHeight: '14px'}}/>
@@ -217,7 +217,7 @@ export default function MediaCard(
     }
 
     return (
-        <Card className={'cardPokemons'}>
+        <Card className='cardPokemons'>
             <div className="flip-card-inner">
                 <div className="flipCardFront">
                     <div className='contentInfo'>
@@ -236,12 +236,12 @@ export default function MediaCard(
                     </div>
 
                     <CardActions className='titlePower'>
-                        <div className={'powerAndWeightDetail'}>
+                        <div className='powerAndWeightDetail'>
                             <span>POWER: {base_experience}</span>
                             <span>{powerEvolution(base_experience)}</span>
                         </div>
 
-                        <div className={'powerAndWeightDetail'}>
+                        <div className='powerAndWeightDetail'>
                             <span style={{display: 'flex', flexDirection: 'column'}}>WEIGHT: {weight}</span>
                             <span style={{color: 'darkred'}}>{weightEvolution(weight)}</span>
                         </div>
@@ -275,15 +275,15 @@ export default function MediaCard(
                                 </p>
                             </CardActions>
                             <CardActions className='titlePowerBack'>
-                                <p className={'iconAttacks'}>
+                                <p className='iconAttacks'>
                                     <img src={iconAttacks} alt=""/> Habilidades:
                                 </p>
 
                                 <div className="habilites">
-                                        <span className={'iconAttacksHability'}>
+                                        <span className='iconAttacksHability'>
                                         <img src={iconHability} alt=""/>{abilite1}
                                         </span>
-                                    <span className={'iconAttacksHability'}>
+                                    <span className='iconAttacksHability'>
                                         <img src={iconHability} alt=""/>{abilite2}
                                         </span>
                                 </div>

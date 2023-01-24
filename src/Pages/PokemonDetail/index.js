@@ -4,7 +4,7 @@ import './index.css'
 import {useAxios} from "../../Services/Hooks/useAxios";
 import axios from "axios";
 import Footer from "../../Components/Footer";
-import Header from "../../Components/Header";
+import HeaderMobile from "../../Components/Header";
 import Home from '../Home'
 
 const PokemonDetail = (props) => {
@@ -72,7 +72,7 @@ const PokemonDetail = (props) => {
 
     return (
         <div>
-            <Header/>
+            <HeaderMobile/>
             <Home/>
             <Footer/>
         </div>

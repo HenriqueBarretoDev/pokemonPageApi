@@ -1,0 +1,143 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+    background-color: #212529;
+    color: white;
+    transition: all 0.2s;
+    z-index: 5;
+    max-width: 100%;
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+    justify-content: left;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 25px;
+}
+
+.headerLeft a:hover {
+    -webkit-transform: scale(0.5);
+    transform: scale(1.2);
+    text-decoration: underline;
+}
+
+.headerLeft a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.headerRight {
+    display: flex;
+    transition: all 0.2s;
+    margin-right: 20px;
+}
+
+.headerBtn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 14px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 20px;
+    transition: all 0.2s;
+}
+
+.headerRight :hover {
+    -webkit-transform: scale(0.5);
+    transform: scale(1.2);
+    text-decoration: underline;
+}
+
+.headerBtnIcon {
+    margin-right: 10px;
+}
+
+
+.headerRight button {
+    display: flex;
+}
+
+.userLogged img {
+    max-height: 50px;
+    border-radius: 50%;
+    margin-left: 4px;
+}
+
+.iconPokemon {
+    height: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.userLogged {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: flex-end;
+    align-items: flex-end;
+    justify-content: end;
+    margin-right: 40px;
+}
+
+.fixedMenu {
+    position: fixed;
+    top: 0;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgb(238, 21, 21) 0%, rgb(34, 34, 36) 100%);
+    width: 100%;
+}
+
+/*mobile*/
+@media (min-width: 280px) and (max-width: 821px) {
+    .header {
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .headerLeft {
+        margin: 0 0 0 20px;
+    }
+
+    .headerLeft a {
+        margin: 0 10px;
+        padding: 0;
+    }
+
+    .headerRight {
+        width: 100%;
+        display: flex;
+        padding: 0;
+        justify-content: flex-end;
+        margin: 0 20px 0 0;
+    }
+
+    .headerBtn {
+        margin: 0 20px 0 0;
+        padding: 5px;
+    }
+
+    .userLogged img {
+        margin: 0;
+    }
+
+    .iconPokemon {
+        margin: 0;
+    }
+
+    .userLogged {
+        margin: 0 20px 0 0;
+        padding: 0;
+        align-items: center;
+    }
+}

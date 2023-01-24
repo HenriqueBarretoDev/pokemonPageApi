@@ -1,0 +1,60 @@
+.mainHomePageInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.detailVideo {
+    background-color: #5C5E62;
+    min-width: 40%;
+    max-width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.detailVideo h1 {
+    color: whitesmoke;
+}
+
+.video {
+    min-width: 45%;
+    max-width: 45%;
+    align-items: center;
+    display: flex;
+    margin: 0 20px;
+}
+
+.video video {
+    min-width: 100%;
+    max-width: 100%;
+    border-radius: 20px;
+
+}
+
+.containerHome {
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subContainerHome {
+    display: flex;
+}
+
+.infoVideoLeft {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+

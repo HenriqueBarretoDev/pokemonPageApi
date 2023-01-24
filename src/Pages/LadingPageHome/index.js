@@ -1,15 +1,16 @@
 import React from "react";
 
-import Header from '../../Components/Header';
 import ContentHomePage from "../../Components/ContentHomePage";
 import Footer from "../../Components/Footer";
-import Home from '../Home'
+import Header from "../../Components/Header";
+import MainHomePageInfo from "../../Components/MainHomePageInfo";
 
 const LadingPageHome = () => {
     return (
         <div className="LadingPageHome">
             <Header/>
             <ContentHomePage/>
+            <MainHomePageInfo/>
             <Footer/>
         </div>
     )

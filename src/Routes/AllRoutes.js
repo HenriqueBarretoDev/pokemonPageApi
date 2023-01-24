@@ -1,27 +1,26 @@
-import React,{useState} from 'react';
+import React from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 import LadingPageHome from "../Pages/LadingPageHome";
 import PokemonDetail from '../Pages/PokemonDetail'
 import Register from "../Pages/Register";
 import Connect from "../Pages/Connect";
-import NewPokemonDetail from "../Pages/NewPokemonDetail";
+import Page404 from '../Pages/Page404'
+import Estudos from '../Pages/Estudos'
 
-// const [pagination, setPagination] = useState('')
-
-const AllRoutes = () => (
-    <Router>
-        {/*<Home/>*/}
-        {/*{pagination && (*/}
-        <Routes>
-            <Route exact path="/" element={<LadingPageHome/>}/>
-            <Route exact path="/pokedex" element={<PokemonDetail/>}/>
-            <Route exact path="/registrar" element={<Register/>}/>
-            <Route exact path="/logar" element={<Connect/>}/>
-            <Route exact path="/teste" element={<NewPokemonDetail/>}/>
-        </Routes>
-        {/*) }*/}
-    </Router>
-);
+const AllRoutes = () => {
+    return (
+        <Router>
+            <Routes>
+                <Route exact path="/" element={<LadingPageHome/>}/>
+                <Route exact path="/pokedex" element={<PokemonDetail/>}/>
+                <Route exact path="/registrar" element={<Register/>}/>
+                <Route exact path="/logar" element={<Connect/>}/>
+                <Route exact path="/teste" element={<Estudos/>}/>
+                <Route path="*" element={<Page404/>}/>
+            </Routes>
+        </Router>
+    )
+}
 
 export default AllRoutes;

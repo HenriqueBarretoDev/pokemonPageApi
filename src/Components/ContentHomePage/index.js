@@ -18,8 +18,8 @@ const ContentHomePage = () => {
                     Comece sua nova aventura na região de Pallet, nesta aventura de mundo aberto para o Nintendo Switch.
                     Pronto para ser o melhor treinador pokemon do mundo?
                 </p>
-                <div className={'alignButtonStartJourney'}>
-                <button className={'startJourney'} onClick={goToPokemon}>Iniciar jornada</button>
+                <div className='alignButtonStartJourney'>
+                <button className='startJourney' onClick={goToPokemon}>Iniciar jornada</button>
                 </div>
             </main>
         </div>

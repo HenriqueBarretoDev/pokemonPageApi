@@ -57,14 +57,14 @@ export default function Home() {
             </div>
             {loading && (
                 <div className="loading">
-                    <div className={'loadingSkeleton'}/>
-                    <div className={'loadingSkeleton'}/>
-                    <div className={'loadingSkeleton'}/>
-                    <div className={'loadingSkeleton'}/>
-                    <div className={'loadingSkeleton'}/>
-                    <div className={'loadingSkeleton'}/>
-                    <div className={'loadingSkeleton'}/>
-                    <div className={'loadingSkeleton'}/>
+                    <div className='loadingSkeleton'/>
+                    <div className='loadingSkeleton'/>
+                    <div className='loadingSkeleton'/>
+                    <div className='loadingSkeleton'/>
+                    <div className='loadingSkeleton'/>
+                    <div className='loadingSkeleton'/>
+                    <div className='loadingSkeleton'/>
+                    <div className='loadingSkeleton'/>
                 </div>
             )}
             <div className='cardsPokedex'>

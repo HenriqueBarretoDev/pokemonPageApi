@@ -51,7 +51,7 @@
     font-size: 50px;
     font-weight: 400;
     color: #212529;
-    font-family: 'Lobster', cursive;
+    font-family: 'Games', sans-serif;
     background: linear-gradient(175deg, red, #212529);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -76,4 +76,33 @@
     cursor: pointer;
     min-width: 200px;
     min-height: 30px;
+}
+
+.successRegister {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    padding: 50px 20px;
+    margin: 100px 100px 0 0;
+}
+
+.loading {
+    animation: spin 0.5s linear infinite;
+    max-width: 40px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.successRegister img {
+    max-height: 100px;
 }

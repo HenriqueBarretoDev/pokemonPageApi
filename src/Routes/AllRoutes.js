@@ -6,7 +6,6 @@ import PokemonDetail from '../Pages/PokemonDetail'
 import Register from "../Pages/Register";
 import Connect from "../Pages/Connect";
 import Page404 from '../Pages/Page404'
-import Estudos from '../Pages/Estudos'
 
 const AllRoutes = () => {
     return (
@@ -16,7 +15,6 @@ const AllRoutes = () => {
                 <Route exact path="/pokedex" element={<PokemonDetail/>}/>
                 <Route exact path="/registrar" element={<Register/>}/>
                 <Route exact path="/logar" element={<Connect/>}/>
-                <Route exact path="/teste" element={<Estudos/>}/>
                 <Route path="*" element={<Page404/>}/>
             </Routes>
         </Router>

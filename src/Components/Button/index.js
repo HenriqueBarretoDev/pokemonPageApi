@@ -2,11 +2,6 @@ import React from 'react';
 import './indes.css'
 
 
-// const ref = useRef(null);
-// const handleExecuteClick = () => {
-//     ref.current.click();
-// };
-
 const Button = ({
                     title,
                     icon: Icon,

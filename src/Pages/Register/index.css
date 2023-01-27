@@ -106,3 +106,41 @@
 .successRegister img {
     max-height: 100px;
 }
+
+/*mobile*/
+@media (min-width: 280px) and (max-width: 821px) {
+    .register {
+        display: flex;
+        flex-direction: column;
+        background-image: url("../../Assets/Images/05b708bffd640ba6868448dd42defaa0.jpg");
+        background-position: top;
+        background-size: contain;
+    }
+
+    .contentRegister {
+        display: flex;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-image: none;
+        background-position: top;
+        background-size: cover;
+    }
+
+    .contentRegister h1 {
+        padding: 0 25px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .contentRegister form {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .successRegister {
+        align-items: center;
+        margin: 50px 20px 0 20px;
+        padding: 0 20px;
+    }
+
+}

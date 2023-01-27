@@ -10,16 +10,18 @@ const ContentHomePage = () => {
         navigate("/logar")
     }
 
+
+
     return (
         <div className="contentHomePage">
             <main>
                 <h1 className="titleHomePage">Super Pokemon</h1>
                 <p className="textHomePage">
-                    Comece sua nova aventura na região de Pallet, nesta aventura de mundo aberto para o Nintendo Switch.
+                    Comece sua nova aventura na região de Pallet,<br/> nesta aventura de mundo aberto para o Nintendo Switch.
                     Pronto para ser o melhor treinador pokemon do mundo?
                 </p>
                 <div className='alignButtonStartJourney'>
-                <button className='startJourney' onClick={goToPokemon}>Iniciar jornada</button>
+                    <button className='startJourney' onClick={goToPokemon}>Iniciar jornada</button>
                 </div>
             </main>
         </div>

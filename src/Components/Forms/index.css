@@ -15,9 +15,22 @@
 }
 
 .formContainer input {
-    padding: 5px;
-    margin-bottom: 10px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+
 }
+.formContainer button {
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: 'Games', sans-serif;
+    background: linear-gradient(175deg, red, #212529);
+    color: white;
+    letter-spacing: 5px;
+    font-size: 14px;
+}
+
 
 .formContainer .error-message {
     color: red;
@@ -35,11 +48,11 @@
 }
 
 .erroRegisterMsg {
-    background-color: yellow;
-    color: #212529;
+    color: yellow;
     border-radius: 10px;
-    padding: 0 5px;
+    padding: 5px;
     text-align: center;
     margin-bottom: 10px;
-    font-size: 10px;
+    font-size: 14px;
+    font-weight: bold;
 }

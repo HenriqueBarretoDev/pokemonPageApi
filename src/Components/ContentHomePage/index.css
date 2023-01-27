@@ -45,17 +45,18 @@
     padding-right: 20px;
 
 }
+
 @media (max-width: 2560px) {
     .titleHomePage {
         font-size: 120px;
     }
 }
+
 @media (max-width: 1440px) {
     .titleHomePage {
         font-size: 80px;
     }
 }
-
 
 .textHomePage {
     font-size: 18px;
@@ -72,11 +73,13 @@
     max-width: 40%;
     background: linear-gradient(175deg, red, #fff);
 }
+
 @media (max-width: 2560px) {
     .textHomePage {
         font-size: 26px;
     }
 }
+
 @media (max-width: 1440px) {
     .textHomePage {
         font-size: 18px;
@@ -115,4 +118,77 @@
     0 0 25px #FFC107,
     0 0 50px #FFC107,
     0 0 100px #FFC107;
+}
+
+/*mobile*/
+@media (min-width: 280px) and (max-width: 821px) {
+    .contentHomePage {
+        background-size: cover !important;
+        background: url('../../Assets/Images/221c4080a70570f82a373ab87cfc539d.gif');
+        background-repeat: no-repeat;
+        background-position: initial;
+        background-position: unset;
+        background-position: center;
+        max-height: 70vh;
+        min-height: 70vh;
+        margin: 50px 0 0 0;
+        padding: 0;
+        width: 100vw;
+        min-width: 100vw;
+        max-width: 100vw;
+    }
+
+    .contentHomePage main {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        align-self: center;
+    }
+
+    .contentHomePage main h1 {
+        margin: 5px 0;
+        padding: 0;
+        font-size: 40px;
+        text-align: center;
+        position: relative;
+        bottom: 52px;
+    }
+
+    .contentHomePage main p {
+        margin: 420px 0 0 0;
+        padding: 0;
+        font-size: 12px;
+        font-weight: 300;
+        width: 90%;
+    }
+
+    .textHomePage {
+        font-size: 12px;
+        font-weight: 200;
+        text-align: center;
+        line-height: normal;
+        font-family: 'Microsport', sans-serif;
+        margin-bottom: 10px;
+        padding: 10px !important;
+        border-radius: 10px;
+        color: #212529;
+        max-width: 100%;
+        letter-spacing: 3px;
+    }
+
+    .alignButtonStartJourney {
+        padding: 0;
+    }
+
+    .startJourney {
+        padding: 5px 15px;
+        font-size: 18px;
+        border-radius: 7px;
+        letter-spacing: 5px;
+        font-weight: 400;
+        max-width: 90vw;
+        min-width: 90vw;
+        margin: 20px 0!important;
+    }
 }

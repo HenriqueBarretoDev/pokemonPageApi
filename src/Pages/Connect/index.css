@@ -144,7 +144,6 @@
 .containerConnectRight {
     display: flex;
     flex-direction: column;
-    /*margin: 0 auto;*/
     position: relative;
     bottom: 21px;
 }
@@ -292,7 +291,7 @@
 .containerEmail i {
     position: absolute;
     left: 0;
-    top: 35px;
+    top: 30px;
     width: 100%;
     height: 2px;
     background: #222;
@@ -342,7 +341,7 @@
 .containerPassword i {
     position: absolute;
     left: 0;
-    top: 35px;
+    top: 30px;
     width: 100%;
     height: 2px;
     background: #222;
@@ -355,4 +354,311 @@
     height: 100%;
     background: #898F9C;
     animation: animate 3s linear infinite;
+}
+
+/*mobile*/
+.connectMobile {
+    background-image: url("../../Assets/Images/pokemon-unite-2k-wallpaper-2560x1440-uhdpaper.com-831.1_a.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.containerMobile {
+    min-height: 100vh;
+    margin: 10px 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.backgroundConnectGray {
+    background-color: #C4C4C4;
+    margin: 20px 10px;
+    position: relative;
+    top: 10px;
+    border-radius: 10px;
+}
+
+.emailAndPassword {
+    width: 80vw;
+    margin-bottom: 10px;
+}
+
+.containerEmailMobile {
+    position: relative;
+    width: 200px;
+}
+
+.containerEmailMobile input {
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: #222;
+    padding: 8px;
+}
+
+.containerEmailMobile label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: rgba(105, 105, 105, 0.7);
+    text-transform: uppercase;
+    pointer-events: none;
+    transition: .5s;
+    font-weight: bold;
+}
+
+.containerEmailMobile input:valid ~ label,
+.containerEmailMobile input:focus ~ label {
+    color: rgb(10, 131, 212);
+    transform: translateY(-15px);
+    font-size: .6rem;
+}
+
+.containerEmailMobile i {
+    position: absolute;
+    left: 0;
+    top: 35px;
+    width: 100%;
+    height: 2px;
+    background: rgba(105, 105, 105, 0.7);;
+}
+
+.containerEmailMobile i:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #898F9C;
+    min-width: 100%;
+}
+
+.containerPasswordMobile {
+    position: relative;
+    margin: 30px 0;
+    width: 200px;
+}
+
+.containerPasswordMobile input {
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: #222;
+    padding: 8px;
+}
+
+.containerPasswordMobile label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: rgba(105, 105, 105, 0.7);
+    text-transform: uppercase;
+    pointer-events: none;
+    transition: .5s;
+    font-weight: bold;
+}
+
+.containerPasswordMobile input:valid ~ label,
+.containerPasswordMobile input:focus ~ label {
+    color: rgb(10, 131, 212);
+    transform: translateY(-15px);
+    font-size: .6rem;
+}
+
+.containerPasswordMobile i {
+    position: absolute;
+    left: 0;
+    top: 35px;
+    width: 100%;
+    height: 2px;
+    background: rgba(105, 105, 105, 0.7);
+}
+
+.containerPasswordMobile i:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #898F9C;
+    animation: animate 3s linear infinite;
+}
+
+.loginAndRegisterMobile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.titleConnectPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px
+}
+
+.titleConnectPage h1 {
+    font-family: 'Games', sans-serif;
+    font-size: 17px;
+    white-space: nowrap;
+    font-weight: bold;
+    line-height: 10px;
+    color: #FF5B4D;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+}
+
+.titleConnectPage img {
+    max-height: 50px;
+    min-height: 50px;
+    animation: pulse 1.2s infinite;
+    display: flex;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    z-index: 1;
+    margin: 10px;
+}
+
+.loginButtonMobile {
+    display: inline-block;
+    padding: 8px 14px;
+    border: 1px solid #4f4f4f;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 19px;
+    color: black;
+    min-width: 120px;
+    z-index: 1;
+}
+
+.loginButtonMobile:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.loginButtonMobile:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #39bda7;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.loginButtonMobile:hover {
+    color: #ffffff;
+    border: 1px solid #39bda7;
+}
+
+.loginButtonMobile:hover:before {
+    top: -35%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.loginButtonMobile:hover:after {
+    top: -45%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.loginSocialNetworksMobile {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: center;
+    margin: 10px 0;
+    width: 100vw;
+}
+
+.loginSocialNetworksMobile img {
+    max-height: 30px;
+    min-height: 30px;
+    margin-right: 5px;
+}
+
+.loginSocialNetworksMobile button {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    min-height: 35px;
+    max-height: 35px;
+    min-width: 120px;
+    border: none;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+.separatorLoginMobile {
+    display: flex;
+    justify-content: center;
+    color: #212529;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.RememberAndForgotMobile {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px auto;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.RememberAndForgotMobile label {
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    color: #212529;
+}
+
+.RememberAndForgotMobile a {
+    color: #212529;
+    text-decoration: none;
+}
+
+.boxLoginAndRegisterButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    margin-bottom: 30px;
+}
+
+.TermsMobile {
+    font-size: 14px;
+    line-height: 5px;
+    color: #898F9C;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.TermsMobile a {
+    color: #4267B2;
 }

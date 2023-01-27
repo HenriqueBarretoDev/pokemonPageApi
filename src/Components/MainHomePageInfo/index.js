@@ -8,13 +8,15 @@ const MainHomePageInfo = () => {
     return (
         <div className="mainHomePageInfo">
             <div className="containerHome">
+                <img className='hiddenDesktop' src={pokemonHomePage} alt=""/>
                 <div style={{float: "left"}} className='detailVideo'>
                     <h1>
                         Seus Pokémon preferidos estão prontos para competir com ataques poderosos e Habilidades únicas.
                         Qual Pokémon você levará para a batalha?
                     </h1>
                 </div>
-                <img src={pokemonHomePage} alt=""/>
+
+                <img className='hiddenMobile' src={pokemonHomePage} alt=""/>
             </div>
 
             <div className='subContainerHome'>

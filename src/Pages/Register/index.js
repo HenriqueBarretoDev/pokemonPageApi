@@ -3,8 +3,6 @@ import {Link, useHistory, useLocation, useNavigate} from 'react-router-dom';
 import './index.css'
 
 import HeaderMobile from '../../Components/Header'
-import {alertTitleClasses} from "@mui/material";
-import Button from '../../Components/Button'
 import Footer from "../../Components/Footer";
 import successRegisterIcon from '../../Assets/Icons/sucessRegister.webp'
 import {useAuth} from "../../Services/Hooks/useAuth";
